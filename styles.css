@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+	height: 100vh;
+	width: 100%;
+	overflow: clip;
+background-image: linear-gradient(0deg, #242424, #000000);
+background-size: cover;
+background-repeat: no-repeat;
+background-attachment: fixed;
+}
+#maracas-container {
+	position: absolute;
+	top: 10%;
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	vertical-align: center;
+	justify-content: center;
+	gap: 40px;
+	perspective: 500px;
+}
+.maraca {
+	height: 200px;
+	width: 130px;
+	background-image: linear-gradient(180deg, #fe5fb8 16.67%, #65f740 16.67%, #65f740 33.33%, #fff945 33.33%, #fff945 50%, #fe5fb8 50%, #fe5fb8 66.67%, #65f740 66.67%, #65f740 83.33%, #fff945 83.33%, #fff945 100%);
+	border-radius: 50%;
+	filter: drop-shadow(-0.3rem -0.3rem 1.4rem #BE1A78);
+}
+.maraca:after {
+	content: "";
+  position: absolute;
+		left: 47px;
+		bottom: -220px;
+  border-bottom-left-radius: 50%;
+		border-bottom-right-radius: 40%;
+		border-top-left-radius: 50%;
+		border-top-right-radius: 40%;
+		width: 36px;
+		height: 250px;
+		background-image: linear-gradient(0deg,  #a56e27, #D1913C);
+}
+#maraca-one, #maraca-two {
+	animation-name: shake;
+	animation-duration: 0.4s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	transform-origin: bottom;
+	animation-delay: -.2s;
+}
+@keyframes shake {
+	0% {
+		transform: translate(10px, 5px) rotate(5deg);
+	}
+	50% {
+		transform: translate(-10px, -5px) rotate(-5deg);
+}
+	100% {
+		transform: translate(10px, 5px), rotate(5deg);
+	}
+}
