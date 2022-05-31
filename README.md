@@ -1,2 +1,3 @@
 # Shaking-Maracas-Animation
-Another animation for a Codepen challenge.
+<p>Another animation for a Codepen challenge. This one is for the challenge "Shake," which occurred in the second week of May. I was inspired by brian1983's <a href="https://codepen.io/brian1983/full/eYNzZEP">Notification Bell Icon</a> and decided to create something similar with maracas. I think maracas could be a fun alternative to a notification bell for a Mexican restaurant or any website with a Latino cultural theme.</p>
+If you'd like to see the maracas in action, you can check out the animation on my Codepen <a href="https://codepen.io/TurtleQueenCoding/full/abqqxPg">here</a>.
